@@ -5,12 +5,14 @@ import "./App.css";
 import Home from "./pages/Home";
 import ProductDetails from "./pages/ProductDetails";
 import ProductListing from "./pages/ProductListing";
+import Breadcrumbs from "./components/Breadcrumbs";
 
 function App() {
   return (
     <BrowserRouter>
       <div>
         {/* breadcrumbs */}
+        <Breadcrumbs />
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Home />} />
